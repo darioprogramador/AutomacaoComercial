@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8767B627-2019-482B-959B-40887133B8C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AutomocaoComercial</RootNamespace>
+    <AssemblyName>AutomocaoComercial</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="F_CadastroProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_CadastroProduto.Designer.cs">
+      <DependentUpon>F_CadastroProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Caixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Caixa.Designer.cs">
+      <DependentUpon>F_Caixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_FinalizarVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_FinalizarVenda.Designer.cs">
+      <DependentUpon>F_FinalizarVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_FolhaPag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_FolhaPag.Designer.cs">
+      <DependentUpon>F_FolhaPag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Login.Designer.cs">
+      <DependentUpon>F_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_CadastroFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_CadastroFuncionario.Designer.cs">
+      <DependentUpon>F_CadastroFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_TelaAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_TelaAdmin.Designer.cs">
+      <DependentUpon>F_TelaAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="F_CadastroFuncionario.resx">
+      <DependentUpon>F_CadastroFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_CadastroProduto.resx">
+      <DependentUpon>F_CadastroProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Caixa.resx">
+      <DependentUpon>F_Caixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_FinalizarVenda.resx">
+      <DependentUpon>F_FinalizarVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_FolhaPag.resx">
+      <DependentUpon>F_FolhaPag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Login.resx">
+      <DependentUpon>F_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_TelaAdmin.resx">
+      <DependentUpon>F_TelaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_5c2e89c-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoLogin.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_5538ea24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_5538ea24-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_5538ea24-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoLogin1.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adc3dc76deedd5b27ab4d49d265a72ca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flat-icone-nota-de-dinheiro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flat-icone-nota-de-dinheiro1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PIX.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USuarioLogin.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
